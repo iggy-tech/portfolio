@@ -367,6 +367,7 @@ export default function Home() {
               <h1 className="text-xl lg:text-4xl font-semibold">
                 <Typewriter
                   words={["Hi, I am Igor! I build things for the web."]}
+                  cursor
                 />
               </h1>
 
@@ -501,7 +502,8 @@ export default function Home() {
                 <div
                   className="
                md:flex justify-between 
-              cursor-pointer items-center border rounded-2xl p-4
+              cursor-pointer items-center 
+              border rounded-2xl p-4
               bg-white
               
               "
