@@ -34,7 +34,7 @@ const videos = [
         image: "/images/next.png",
       },
       {
-        title: "React",
+        title: "Tailwind",
         image: "/images/tailwind.png",
       },
       {
@@ -42,11 +42,11 @@ const videos = [
         image: "/images/react.png",
       },
       {
-        title: "React",
+        title: "Vercel",
         image: "/images/vercel.svg",
       },
       {
-        title: "React",
+        title: "Stripe",
         image: "/images/stripe.png",
       },
     ],
@@ -61,20 +61,20 @@ const videos = [
     image: "/images/loom.jpg",
     technologies: [
       {
-        title: "React",
+        title: "Typescript",
         image: "/images/ts.jpg",
       },
 
       {
-        title: "React",
+        title: "Next Js",
         image: "/images/next.png",
       },
       {
-        title: "React",
+        title: "Tailwind",
         image: "/images/tailwind.png",
       },
       {
-        title: "React",
+        title: "Vercel",
         image: "/images/vercel.svg",
       },
     ],
@@ -88,24 +88,24 @@ const videos = [
     image: "/images/asana.jpg",
     technologies: [
       {
-        title: "React",
+        title: "Typescript",
         image: "/images/ts.jpg",
       },
 
       {
-        title: "React",
+        title: "Next Js",
         image: "/images/next.png",
       },
       {
-        title: "React",
+        title: "Tailwind",
         image: "/images/tailwind.png",
       },
       {
-        title: "React",
+        title: "Vercel",
         image: "/images/vercel.svg",
       },
       {
-        title: "React",
+        title: "Framer Motion",
         image: "/images/framer-motion.webp",
       },
     ],
@@ -119,20 +119,20 @@ const videos = [
     image: "/images/digital-marketing-agency.webp",
     technologies: [
       {
-        title: "React",
+        title: "Typescript",
         image: "/images/ts.jpg",
       },
 
       {
-        title: "React",
+        title: "Next Js",
         image: "/images/next.png",
       },
       {
-        title: "React",
+        title: "Tailwind",
         image: "/images/tailwind.png",
       },
       {
-        title: "React",
+        title: "Vercel",
         image: "/images/vercel.svg",
       },
     ],
@@ -145,24 +145,24 @@ const videos = [
     image: "/images/notion.jpg",
     technologies: [
       {
-        title: "React",
+        title: "Typescript",
         image: "/images/ts.jpg",
       },
 
       {
-        title: "React",
+        title: "Next Js",
         image: "/images/next.png",
       },
       {
-        title: "React",
+        title: "Tailwind",
         image: "/images/tailwind.png",
       },
       {
-        title: "React",
+        title: "Vercel",
         image: "/images/vercel.svg",
       },
       {
-        title: "React",
+        title: "Framer Motion",
         image: "/images/framer-motion.webp",
       },
     ],
@@ -347,7 +347,22 @@ export default function Home() {
             />
 
             <div className="space-y-2">
-              <div className="text-4xl my-4 ">👋</div>
+            <motion.div
+              style={{
+                paddingRight: "15px",
+                display: "inline-block",
+              }}
+              animate={{ rotate: [0, 20, 0] }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatDelay: 0,
+              }}
+              className="text-4xl  my-4  "
+            >
+              👋
+            </motion.div>
 
               <h1 className="text-xl lg:text-4xl font-semibold">
                 <Typewriter
